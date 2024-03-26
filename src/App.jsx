@@ -1,7 +1,7 @@
 // React Router
 import { Routes, Route } from "react-router-dom";
 // Pages
-import { AuthLayout, DashboardLayout, Home, SignIn, SignUp } from "./pages";
+import { AuthLayout, DashboardLayout, SignIn, SignUp, Stats } from "./pages";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       </Route>
       {/* Private Routes */}
       <Route element={<DashboardLayout />}>
-        <Route index element={<Home />} />
+        <Route index element={<Stats />} />
       </Route>
     </Routes>
   );
