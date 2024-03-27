@@ -9,10 +9,10 @@ export const navData = [
   },
   {
     title: "All Jobs",
-    path: "/",
+    path: "/all-jobs",
   },
   {
     title: "Profile",
-    path: "/",
+    path: "/profile",
   },
 ];

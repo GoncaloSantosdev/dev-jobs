@@ -3,8 +3,10 @@ import { Routes, Route } from "react-router-dom";
 // Pages
 import {
   AddJob,
+  AllJobs,
   AuthLayout,
   DashboardLayout,
+  Profile,
   SignIn,
   SignUp,
   Stats,
@@ -22,6 +24,8 @@ const App = () => {
       <Route element={<DashboardLayout />}>
         <Route index element={<Stats />} />
         <Route path="/add-job" element={<AddJob />} />
+        <Route path="/all-jobs" element={<AllJobs />} />
+        <Route path="/profile" element={<Profile />} />
       </Route>
     </Routes>
   );

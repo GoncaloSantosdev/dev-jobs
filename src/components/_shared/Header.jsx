@@ -1,11 +1,14 @@
 // React Router
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // Data
 import { navData } from "../../data/navData";
 // React Icons
 import { LuSearchCode } from "react-icons/lu";
 
 const Header = () => {
+  const location = useLocation();
+  let pageTitle = location.pathname;
+
   return (
     <div>
       <header className="bg-indigo-600 px-6 py-4  flex justify-between">
@@ -31,10 +34,18 @@ const Header = () => {
         </div>
       </header>
       <div className="bg-gray-100 px-6 py-3 flex items-center justify-between">
-        <h2 className="text-lg">Stats</h2>
+        <h2 className="text-lg">
+          {pageTitle === "/add-job"
+            ? "Add Job"
+            : pageTitle === "/all-jobs"
+            ? "All Jobs"
+            : pageTitle === "/profile"
+            ? "Profile"
+            : "Stats"}
+        </h2>
 
         <Link
-          to={"/"}
+          to={"/add-job"}
           className="rounded-md bg-indigo-600 px-4 py-2 text-sm text-white hover:scale-105 transition-all"
         >
           Add New
