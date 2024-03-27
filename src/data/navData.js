@@ -5,7 +5,7 @@ export const navData = [
   },
   {
     title: "Add Job",
-    path: "/",
+    path: "/add-job",
   },
   {
     title: "All Jobs",

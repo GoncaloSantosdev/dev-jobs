@@ -7,7 +7,7 @@ import { LuSearchCode } from "react-icons/lu";
 
 const Header = () => {
   return (
-    <>
+    <div>
       <header className="bg-indigo-600 px-6 py-4  flex justify-between">
         <div className="flex items-center gap-x-2">
           <LuSearchCode size={24} className="text-white" />
@@ -30,7 +30,7 @@ const Header = () => {
           />
         </div>
       </header>
-      <div className="bg-white shadow px-6 py-3 flex items-center justify-between">
+      <div className="bg-gray-100 px-6 py-3 flex items-center justify-between">
         <h2 className="text-lg">Stats</h2>
 
         <Link
@@ -40,7 +40,7 @@ const Header = () => {
           Add New
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

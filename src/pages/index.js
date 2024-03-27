@@ -5,3 +5,4 @@ export { default as SignIn } from "./_auth/SignIn";
 // Dashboard
 export { default as DashboardLayout } from "./_dashboard/DashboardLayout";
 export { default as Stats } from "./_dashboard/Stats";
+export { default as AddJob } from "./_dashboard/AddJob";

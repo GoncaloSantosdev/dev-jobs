@@ -25,8 +25,8 @@ const statsData = [
 
 const Stats = () => {
   return (
-    <section className="px-6">
-      <div className="flex justify-between gap-x-4 mt-8">
+    <section className="bg-white py-8 px-6">
+      <div className="flex justify-between gap-x-4">
         {statsData.map((item, index) => (
           <div
             key={index}

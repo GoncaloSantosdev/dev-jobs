@@ -1,7 +1,14 @@
 // React Router
 import { Routes, Route } from "react-router-dom";
 // Pages
-import { AuthLayout, DashboardLayout, SignIn, SignUp, Stats } from "./pages";
+import {
+  AddJob,
+  AuthLayout,
+  DashboardLayout,
+  SignIn,
+  SignUp,
+  Stats,
+} from "./pages";
 
 const App = () => {
   return (
@@ -14,6 +21,7 @@ const App = () => {
       {/* Private Routes */}
       <Route element={<DashboardLayout />}>
         <Route index element={<Stats />} />
+        <Route path="/add-job" element={<AddJob />} />
       </Route>
     </Routes>
   );
